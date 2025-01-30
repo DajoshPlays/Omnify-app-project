@@ -7,4 +7,74 @@
 body{
     font-family: "Manrope", sans-serif;
     min-height: 100vh;
+    background-color: #0F1012;
+    color: #FFFFFF;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top{
+    margin: 50px 0;
+}
+.logoimg{
+    display: block;
+    margin: 0 auto;
+}
+.welcome-text{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.google-cont{
+    display: flex;
+    background-color: #1B1C1E;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    border-radius: 6.25rem;
+    margin-bottom: 1.5rem;
+}
+.facebook-cont{
+    display: flex;
+    background-color: #1B1C1E;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    border-radius: 6.25rem;
+    margin-bottom: 1.5rem;
+}
+.form-cont{
+    margin-top: 2rem;
+}
+.form-container{
+    margin-bottom: 1rem;
+}
+/* .form-label{} */
+.form-container input{
+    border: 1px solid #f0f0f0;
+    border-radius: 0.625rem;
+    width:100%;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    font-size: 14px;
+    background-color: transparent;
+}
+.form-container input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.summit-btn{
+    width: 100%;
+    background-color: #E5BCE8;
+    color: #0F1012;
+    padding: 10px;
+    border-radius: 0.625rem;
+    /* margin-top: 15px; */
+    font-size: 0.875rem;
 }
