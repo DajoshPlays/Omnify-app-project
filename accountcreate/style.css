@@ -39,6 +39,7 @@ main{
     justify-content: center;
     border-radius: 6.25rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 .facebook-cont{
     display: flex;
@@ -48,12 +49,19 @@ main{
     justify-content: center;
     border-radius: 6.25rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 .form-cont{
     margin-top: 2rem;
 }
 .form-container{
     margin-bottom: 1rem;
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    right: 16px;
+    top: 39px;
 }
 /* .form-label{} */
 .form-container input{
@@ -74,6 +82,14 @@ main{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+.char{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
 }
 .char-div a{
     text-decoration: none;
@@ -89,6 +105,7 @@ main{
     border-radius: 3rem;
     /* margin-top: 15px; */
     font-size: 0.875rem;
+    cursor: pointer;
 }
 .sign-in{
     display: flex;
@@ -99,4 +116,5 @@ main{
     color: #E5BCE8;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
 }
