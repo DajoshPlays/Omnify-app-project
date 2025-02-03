@@ -64,17 +64,39 @@ main{
     gap: 2rem;
     font-size: 14px;
     background-color: transparent;
+    margin-bottom: 1rem;
 }
 .form-container input:focus{
     outline: 0;
     border-color: #777;
 }
+.char-div{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.char-div a{
+    text-decoration: none;
+    color: #FFFFFF66;
+    font-size: 0.75rem;
+    background-color: #1B1C1E;
+}
 .summit-btn{
     width: 100%;
     background-color: #E5BCE8;
     color: #0F1012;
-    padding: 10px;
-    border-radius: 0.625rem;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
     /* margin-top: 15px; */
     font-size: 0.875rem;
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.sign-in-btn{
+    color: #E5BCE8;
+    text-decoration: none;
+    text-align: center;
 }
