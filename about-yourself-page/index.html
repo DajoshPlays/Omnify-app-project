@@ -14,6 +14,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <img src="./assets/omnify-logo.png" alt="omnify logo" class="logo">
+        <img src="./assets/progress.png" alt="registration progress bar" class="progress-bar">
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="heading">Tell us about yourself</h2>
+            <div class="form-cont">
+                <form action="" id="form">
+                    <div class="form-container">
+                        <label class="form-label" for="Username">Username</label>
+                        <input type="text" name="fname" id="fname" placeholder="Enter Username address" required>
+                    </div>
+                    <div class="birth">
+                        <h3 class="title">Date of Birth</h3>
+                        <p class="b-par">Why do we need your date of birth?<a href="#">Learn More</a></p>
+                        <div class="date-input">
+                            <input type="text" class="day" placeholder="DD" maxlength="2">
+                            <select class="month">
+                              <option value="" disabled selected>Month</option>
+                              <option value="01">January</option>
+                              <option value="02">February</option>
+                              <option value="03">March</option>
+                              <option value="04">April</option>
+                              <option value="05">May</option>
+                              <option value="06">June</option>
+                              <option value="07">July</option>
+                              <option value="08">August</option>
+                              <option value="09">September</option>
+                              <option value="10">October</option>
+                              <option value="11">November</option>
+                              <option value="12">December</option>
+                            </select>
+                            <input type="text" class="year" placeholder="YYYY" maxlength="4">
+                          </div>
+                    </div>
+                    <div class="gender">
+                        <h3 class="title">Gender</h3>
+                        <p class="g-par">We use your gender to help personalize our content, recommendations and ads for you</p>
+                        <div class="input-form">
+                            <input type="radio" id="male" name="gender_male" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender_female" value="Female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender_he/shemale" value="HTML">
+                            <label for="">Prefer not to say</label>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <button class="prev-btn">Previous</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                    <p class="next">I wil do this later, Skip now</p>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

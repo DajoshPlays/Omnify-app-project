@@ -16,8 +16,75 @@ body{
     background-color: #0F1012;
     color: #FFFFFF;
 }
-main{
+/* main{
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.heading{
+    font-weight: 700;
+    font-size: 1.5rem;
 }
+.form-label{
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.date-input {
+    display: flex;
+    /* background-color: #333; */
+    gap: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .day{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 15vw;
+  }
+  .month{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 30vw;
+  }
+  .year{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 20vw;
+  }
+  
+  /* .date-part:last-child {
+    margin-right: 0;
+  } */
+  
+  .date-part::placeholder {
+    color: #fff;
+  }
+  
+  select.date-part {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><path d="M0 4h10L5 10z" fill="white"/></svg>') no-repeat right center; */
+    background-size: 10px;
+    padding-right: 25px;
+  }
+  
+  select.date-part::-ms-expand {
+    display: none;
+  }
