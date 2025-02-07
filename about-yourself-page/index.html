@@ -12,11 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/78f952cbe9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="./assets/omnify-logo.png" alt="omnify logo" class="logo">
+        <div class="container">
+            <img src="./assets/omnify-logo.png" alt="omnify logo" class="logo">
         <img src="./assets/progress.png" alt="registration progress bar" class="progress-bar">
+        </div>
     </header>
     <main>
         <div class="container">
@@ -29,7 +34,7 @@
                     </div>
                     <div class="birth">
                         <h3 class="title">Date of Birth</h3>
-                        <p class="b-par">Why do we need your date of birth?<a href="#">Learn More</a></p>
+                        <p class="b-par">Why do we need your date of birth?<a href="#" class="a-birth">Learn More</a></p>
                         <div class="date-input">
                             <input type="text" class="day" placeholder="DD" maxlength="2">
                             <select class="month">
@@ -63,10 +68,10 @@
                         </div>
                     </div>
                     <div class="btn-div">
-                        <button class="prev-btn">Previous</button>
-                        <button class="next-btn">Next</button>
+                        <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                        <button class="next-btn">Next <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
-                    <p class="next">I wil do this later, Skip now</p>
+                    <p class="next">I wil do this later, <a href="#" class="skip">Skip now</a></p>
                 </form>
             </div>
         </div>
