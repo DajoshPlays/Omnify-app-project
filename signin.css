@@ -4,16 +4,123 @@
     padding: 0;
 }
 
-:root {
-    --main-color : #0F1012;
-    --primary-color: #FFFFFF;
-    --secondary-color: #E5BCE8;
-    --input-color: #48494A;
-}
-
 body{
     font-family: "Manrope", sans-serif;
     min-height: 100vh;
     background-color: #0F1012;
     color: #FFFFFF;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.top{
+    margin: 50px 0;
+}
+
+.logoimg{
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome-text{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.google-cont{
+    display: flex;
+    background-color: #1B1C1E;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    border-radius: 6.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.facebook-cont{
+    display: flex;
+    background-color: #1B1C1E;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
+    border-radius: 6.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.line-with-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.line-with-text::before, .line-with-text::after {
+        content: "";
+        flex: 1;
+        border-bottom: 2px solid #333;
+        margin: 5px;}
+
+.text {
+        padding: 0 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+.form-cont{
+    margin-top: 2rem;
+}
+
+.form-container{
+    margin-bottom: 1rem;
+}
+
+/* Form Section */
+
+.form-container input{
+    border: 1px solid #f0f0f0;
+    border-radius: 0.625rem;
+    width:100%;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+    font-size: 14px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.form-container input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.summit-btn{
+    width: 100%;
+    background-color: #E5BCE8;
+    color: #0F1012;
+    padding: 10px;
+    border-radius: 0.625rem;
+    /* margin-top: 15px; */
+    font-size: 0.875rem;
+}
+
+/** Create Account **/
+
+.create{
+    display: flex;
+    justify-content: center;
+    margin:1rem 0;
+}
+
+.create a{
+    color: #E5BCE8;
+    text-decoration: none;
 }
