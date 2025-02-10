@@ -20,14 +20,41 @@ header{
     text-align: center;
     margin-bottom: 2rem;
 }
-/* main{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 .logo{
     margin: 1rem 0;
 }
+.heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.tab-choices{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #1B1C1E;
+    padding: 0.5rem;
+    border-radius: 150px;
+}
+.tab-btn{
+    background-color:#0F1012;
+    padding: 0.3rem 1rem;
+    border: none;
+    color:#A7A7A7;
+    border-radius: 150px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+/* .btnnn{
+    display: flex;
+    gap: 10px;
+    padding: 1rem ;
+} */
 .btn-div{
     display: flex;
     justify-content: center;
