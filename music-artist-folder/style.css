@@ -16,3 +16,48 @@ body{
     background-color: #0F1012;
     color: #FFFFFF;
 }
+header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.logo{
+    margin: 1rem 0;
+}
+.btn-div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.prev-btn{
+    background-color: transparent;
+    border: 1px solid #E5BCE8;
+    border-radius: 150px;
+    /* padding: 0.5rem 1rem; */
+    width: 30%;
+    color: #E5BCE8;
+}
+.next-btn{
+    background-color: #E5BCE8;
+    border: 1px solid #E5BCE8;
+    border-radius: 150px;
+    padding: 0.5rem 1rem;
+    width: 30%;
+}
+.next{
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 500;
+    color: #E5BCE8;
+    margin-bottom: 1rem;
+}
+.skip{
+    text-decoration: none;
+    color: #E5BCE8
+}
