@@ -25,6 +25,10 @@ main{
     justify-content: center;
     align-items: center;
 }
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
 .logo{
     margin: 1rem 0;
 }
@@ -42,26 +46,63 @@ main{
     border-radius: 150px;
 }
 .tab-btn{
-    background-color:#0F1012;
+    background-color: transparent;
     padding: 0.3rem 1rem;
     border: none;
     color:#A7A7A7;
     border-radius: 150px;
     font-size: 0.875rem;
     font-weight: 400;
+    cursor: pointer;
 }
-/* .btnnn{
+.tab-btn.active{
+    background-color: #0F1012;
+    color: #FAFAFA
+}
+.music-box .btn-container-music{
+    display: none;
+}
+.music-box .btn-container-music.active{
     display: flex;
-    gap: 10px;
-    padding: 1rem ;
-} */
+}
+.btn-container-music{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.btn-container-podcast{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.music-box .btn-container-podcast.active{
+    display: flex;
+}
+.music-btn{
+    background-color:#1B1C1E;
+    color: #C3C3C4;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 150px;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+.afro{
+    font-size: 1rem;
+    font-weight: 400;
+}
 .btn-div{
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 1.5rem 0;
 }
-
 .prev-btn{
     background-color: transparent;
     border: 1px solid #E5BCE8;
@@ -69,6 +110,7 @@ main{
     /* padding: 0.5rem 1rem; */
     width: 30%;
     color: #E5BCE8;
+    cursor: pointer;
 }
 .next-btn{
     background-color: #E5BCE8;
@@ -76,6 +118,7 @@ main{
     border-radius: 150px;
     padding: 0.5rem 1rem;
     width: 30%;
+    cursor: pointer;
 }
 .next{
     font-size: 0.875rem;
@@ -83,6 +126,7 @@ main{
     font-weight: 500;
     color: #E5BCE8;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 .skip{
     text-decoration: none;
