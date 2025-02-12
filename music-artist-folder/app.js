@@ -16,5 +16,8 @@ tabButtons.forEach((tab, index) => {
         tabContent[index].classList.add('active')
         
     })
+
+    tabButtons[0].classList.add('active');
+    tabContent[0].classList.add('active');
 })
 
