@@ -17,3 +17,68 @@ body{
     background-color: #0F1012;
     color: #FFFFFF;
 }
+
+main{
+    min-width: 25vw;
+    min-height: 24vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.head{
+    width: 25vw;
+    height: 6vh;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.head h2{
+    font-size: 1.1rem;
+}
+
+.conditions{
+    width: 25vw;
+    height: 13vh;
+    margin-top: 1rem;
+    background-color: #222324;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+#cond{
+    margin-right: .5rem;
+}
+
+.condtext{
+    width: 25vw;
+    height: 20vh;
+    margin-top: 1rem;
+}
+
+.condtext p{
+    font-size: .7rem;
+}
+
+.termslink{
+    color:#E5BCE8;
+    font-weight: 700;
+}
+
+.signup{
+    width: 20rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+#sign{
+    padding: .9rem;
+    width: 20rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E5BCE8;
+}
