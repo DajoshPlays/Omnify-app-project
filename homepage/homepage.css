@@ -16,3 +16,54 @@ body{
     background-color: #0F1012;
     color: #FFFFFF;
 }
+
+/* header styling */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0.8rem;
+}
+.navlinks{
+    text-decoration: none;
+    color: #7D7E7F;
+    font-size: 0.75rem;
+}
+.links{
+    display: none;
+}
+.header-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.8rem;
+}
+.links-2{
+    display: flex;
+    gap: 2rem;
+}
+.mynav-links{
+    background-color: #1B1C1E;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 1rem 0.875rem;
+    border-radius: 150px;
+}
+.links-cont{
+    display: flex;
+    align-items: center;
+}
+.m-features{
+    display: none;
+}
+.search{
+    background-color: #1B1C1E;
+    border-radius: 50%;
+}
+
+
+
+/* @media(min-width:1200px){
+    .header-container{
+        display: flex;
+    }
+} */
