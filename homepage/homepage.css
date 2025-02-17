@@ -31,26 +31,24 @@ body{
 .links{
     display: none;
 }
-.header-2{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0.8rem;
-}
 .links-2{
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.8rem;
 }
-.mynav-links{
+.mynav-links2{
     background-color: #1B1C1E;
     display: flex;
-    gap: 10px;
-    width: 100%;
+    gap: 2.5rem;
+    flex-basis: 65%;
     padding: 1rem 0.875rem;
     border-radius: 150px;
 }
 .links-cont{
     display: flex;
     align-items: center;
+    gap: 0.4rem;
 }
 .m-features{
     display: none;
@@ -58,12 +56,97 @@ body{
 .search{
     background-color: #1B1C1E;
     border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 15%; */
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 
 
-/* @media(min-width:1200px){
+@media(min-width:700px){
     .header-container{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-} */
+    .header-2{
+        display: none;
+    }
+    .bars{
+        display: none;
+    }
+    .links{
+        display: flex;
+        /* justify-content: space-between; */
+        gap:11rem;
+    }
+    .mynav-links{
+        background-color: #1B1C1E;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        padding: 1rem 0.875rem;
+        border-radius: 150px;
+    }
+    .search{
+        background-color: #1B1C1E;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-basis: 15%; */
+        width: 3.5rem;
+        height: 2.5rem;
+    }
+
+}
+@media(min-width:1200px){
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-2{
+        display: none;
+    }
+    .mynav-links{
+        background-color: #1B1C1E;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        padding: 1rem 0.875rem;
+        border-radius: 150px;
+    }
+    .bars{
+        display: none;
+    }
+    .links{
+        display: flex;
+    }
+    .m-features{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .search{
+        background-color: #1B1C1E;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 2rem;
+    }
+    .f-btn{
+        color: #0F1012;
+        border-radius: 150px;
+        padding: 0.875rem 1.25rem;
+        background-color: #FFFFFF;
+    }
+}
