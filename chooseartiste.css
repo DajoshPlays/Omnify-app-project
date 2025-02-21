@@ -34,6 +34,30 @@ body{
     margin-top: 2rem;
 }
 
+.progress{
+    display: flex;
+    align-items: center;
+    width: 38vw;
+    height: 6vh;
+    margin-top: 1rem;
+}
+
+.progress .bold {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color:#8f9295;
+}
+
+.light{
+    margin-top: .3rem;
+    font-size: .8rem;
+    color:#8f9295;
+}
+
+.arrow{
+    margin-left: .5rem;
+}
+
 .preference{
     width: 30vw;
     height: 7vh;
