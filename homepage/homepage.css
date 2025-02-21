@@ -17,6 +17,7 @@ body{
     color: #FFFFFF;
 }
 
+
 /* header styling */
 .header-container{
     display: flex;
@@ -64,25 +65,155 @@ body{
     width: 2.5rem;
     height: 2.5rem;
 }
+.explore{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.875rem;
+}
+.heading{
+    color: #FAFAFA;
+    font-size: 1rem;
+    font-weight: 800;
+}
+.explore a{
+    color: #A9A9AA;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.top{
+    display: flex;
+    gap: 1.4rem;
+    padding: 1rem 0.875rem;
+}
+.image-text{
+    flex: 0 0 50%;
+    max-width: 150px;
+    overflow: hidden;
+}
+.image-text-2{
+    flex: 0 0 25%;
+    max-width: 180px;
+    overflow: hidden;
+}
 
+.image-text img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.image-text-2 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 150px;
+    display: block;
+}
+.image-text p{
+    margin-top: 10px;
+    color: #A9A9AA;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.library-playlist{
+    background-color: #1B1C1E;
+    display: none;
+}
+.your-library{
+    display: flex;
+    padding: 1rem 0.875rem;
+    justify-content: space-between;
+    padding: 20px;
+}
+.library-heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.library-icons{
+    display: flex;
+    gap: 15px;
+}
+.container-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 20px;
+}
+.card{
+    background-color: #292A2C;
+    border-radius: 10px;
+    padding: 1.1875rem 1.25rem;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+}
+.card-title{
+    color: #FAFAFA;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-p{
+    color: #FAFAFA;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 0.85rem;
+}
+.card-btn{
+    background-color: #FFFFFF;
+    color: #0F1012;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.875rem 1.25rem;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.625rem;
+}
+.col{
+    background-color: #1B1C1E;
+    border-radius: 10px;
+}
 
 
 @media(min-width:700px){
     .header-container{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
     }
     .header-2{
         display: none;
+    }
+    .container{
+        display: flex;
+        padding-left: 10px;
+        gap: 10px;
+    }
+    .library-playlist{
+        display: block;
+        flex: 1 1 35%;
+        border-radius: 10px;
+        height: 150vh;
+    }
+    .image-text{
+        flex: 0 0 50%;
+        max-width: 180px;
+        overflow: hidden;
+    }
+    .col{
+        flex: 1 1 65%;
     }
     .bars{
         display: none;
     }
     .links{
         display: flex;
-        /* justify-content: space-between; */
-        gap:11rem;
+        gap:1rem;
+        align-items: center;
+    }
+    .m-features{
+        display: flex;
+        gap: 10px;
     }
     .mynav-links{
         background-color: #1B1C1E;
@@ -110,6 +241,32 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .container{
+        display: flex;
+        overflow-x: hidden;
+        gap: 10px;
+    }
+    .library-playlist{
+        display: block;
+    }
+    .library-playlist{
+        flex: 1 1 35%;
+        border-radius: 10px;
+    }
+    .image-text{
+        flex: 0 0 auto;
+        max-width: 150px;
+        overflow: hidden;
+    }
+    .explore{
+        padding-left: 28px;
+    }
+    .top{
+        padding-left: 28px;
+    }
+    .col{
+        flex: 1 1 65%;
     }
     .header-2{
         display: none;
