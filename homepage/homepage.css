@@ -62,8 +62,8 @@ body{
     justify-content: center;
     align-items: center;
     /* flex-basis: 15%; */
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4.5rem;
+    height: 4rem;
 }
 .explore{
     display: flex;
@@ -84,6 +84,7 @@ body{
     display: flex;
     gap: 1.4rem;
     padding: 1rem 0.875rem;
+    overflow-x: hidden;
 }
 .image-text{
     flex: 0 0 50%;
@@ -143,9 +144,6 @@ body{
     background-color: #292A2C;
     border-radius: 10px;
     padding: 1.1875rem 1.25rem;
-    /* display: flex;
-    flex-direction: column;
-    gap: 10px; */
 }
 .card-title{
     color: #FAFAFA;
@@ -212,8 +210,7 @@ body{
         align-items: center;
     }
     .m-features{
-        display: flex;
-        gap: 10px;
+        display: none;
     }
     .mynav-links{
         background-color: #1B1C1E;
@@ -232,7 +229,7 @@ body{
         align-items: center;
         /* flex-basis: 15%; */
         width: 3.5rem;
-        height: 2.5rem;
+        height: 3rem;
     }
 
 }
@@ -276,7 +273,7 @@ body{
         display: flex;
         gap: 10px;
         width: 100%;
-        padding: 1rem 0.875rem;
+        padding: 0.9375rem 2.6875rem;
         border-radius: 150px;
     }
     .bars{
@@ -287,23 +284,32 @@ body{
     }
     .m-features{
         display: flex;
-        gap: 2rem;
-        justify-content: center;
+        gap: 10px;
+        /* justify-content: center; */
+    }
+    .m-features img{
+        max-width: 30%;
+        height: auto;
+        display: block;
+
     }
     .search{
         background-color: #1B1C1E;
-        border-radius: 50%;
-        padding: 10px;
+        border-radius: 24px;
+        padding: 14px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 3.5rem;
-        height: 2rem;
+        width: 3rem;
+        height: 2.8rem;
     }
     .f-btn{
         color: #0F1012;
         border-radius: 150px;
         padding: 0.875rem 1.25rem;
         background-color: #FFFFFF;
+        border: none;
+        font-size: 0.75rem;
+        font-weight: 600;
     }
 }
