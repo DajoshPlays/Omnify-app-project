@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 
 :root {
@@ -34,19 +34,19 @@ main{
 }
 
 .arrow{
-    width: 600px;
+    width: 300px;
 }
 
 .progress{
     display: flex;
     align-items: center;
-    width: 50vw;
+    width: 90vw;
     height: 6vh;
     margin-top: 1rem;
 }
 
 .progress .bold {
-    margin-left: 1rem;
+    margin-left: .5rem;
     font-size: 1.7rem;
     color:#8f9295;
 }
@@ -62,8 +62,8 @@ main{
 }
 
 .head{
-    width: 25vw;
-    height: 6vh;
+    width: 50vw;
+    height: 10vh;
     margin-top: 2rem;
     text-align: center;
 }
@@ -73,8 +73,8 @@ main{
 }
 
 .conditions{
-    width: 25vw;
-    height: 13vh;
+    width: 90vw;
+    height: 15vh;
     margin-top: 1rem;
     background-color: #222324;
     border-radius: 1rem;
@@ -87,7 +87,7 @@ main{
 }
 
 .condtext{
-    width: 25vw;
+    width: 90vw;
     height: 20vh;
     margin-top: 1rem;
 }
@@ -102,14 +102,14 @@ main{
 }
 
 .signup{
-    width: 30rem;
+    width: 36rem;
     height: 3rem;
-    margin-bottom: 1.2rem;
+    margin: 2rem 0;
 }
 
 #sign{
     padding: 1.2rem;
-    width: 30rem;
+    width: 36rem;
     border-radius: 1rem;
     border: none;
     background-color: #E5BCE8;
