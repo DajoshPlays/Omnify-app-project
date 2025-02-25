@@ -284,7 +284,8 @@ body{
     }
     .m-features{
         display: flex;
-        gap: 10px;
+        gap: 1.5rem;
+        align-items: center;
         /* justify-content: center; */
     }
     .m-features img{
