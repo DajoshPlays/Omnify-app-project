@@ -24,6 +24,97 @@ hmtl{
 
 /* Header */
 
+header{
+    width: 100vw;
+    min-height: 5vh;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.logo{
+    width: 23vw;
+}
+
+.om{
+    margin-top: .5rem;
+}
+
+.nav{
+    width: 25vw;
+    margin-left: 7rem;
+    border-radius: 3rem;
+    background-color: #1b1c1e;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+    margin-top: .9rem;
+    margin-left: 2rem;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: .8rem; 
+}
+
+.moo{
+    color: #9a9b9b;
+}
+
+.pod{
+    margin-top: -1.4rem;
+    margin-left: 1.2rem;
+}
+
+.move{
+    color: #E5BCE8;
+}
+
+.search{
+    width: 5vw;
+    margin-left: 1rem;
+    border-radius: 40rem;
+    background-color: #1b1c1e;
+}
+
+.search img{
+    margin-top: .8rem;
+    margin-left: 1.3rem;
+}
+
+.navexplore{
+    width: 10vw;
+    margin-left: 12rem;
+    margin-top: .6rem;
+}
+
+#pre{
+    border: 2px solid #FFF;
+    border-radius: 4rem;
+    width: 10vw;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: 550;
+}
+
+.bell{
+    width: 4vw;
+    margin-left: 1rem;
+    margin-top: .6rem;
+}
+
+.bell img {
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+
+.round{
+    width: 4vw;
+    margin-top: .6rem;
+}
 
 /* Main */
 
@@ -31,6 +122,7 @@ main{
     min-width: 10vw;
     min-height: 10vh;
     display: flex;
+    
 }
 
 .library{
@@ -112,9 +204,10 @@ main{
 
 .contents{
     width: 75vw;
-    height: 100vh;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10rem;
 }
 
 .crawl{
@@ -127,6 +220,7 @@ main{
     background-position: center;
     background-size: 100% 100%;
     background-attachment:scroll;
+    
 }
 
 .crawl h2{
@@ -263,8 +357,8 @@ main{
     min-height: 10vh;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -273,7 +367,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: left;
 }
 
