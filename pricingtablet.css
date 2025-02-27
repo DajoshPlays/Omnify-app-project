@@ -1,4 +1,4 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -24,18 +24,114 @@ hmtl{
 
 /* Header */
 
+header{
+    width: 100vw;
+    min-height: 5vh;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
-/* Main */
+.logo{
+    width: 15vw;
+    margin-left: 1rem;
+}
+
+.om{
+    margin-top: .5rem;
+}
+
+.nav{
+    width: 45vw;
+    margin-left: 2rem;
+    border-radius: 3rem;
+    background-color: #1b1c1e;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+    margin-top: .9rem;
+    margin-left: 2rem;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: .8rem; 
+}
+
+.moo{
+    color: #9a9b9b;
+}
+
+.pod{
+    margin-top: -1.4rem;
+    margin-left: 1.2rem;
+}
+
+.move{
+    color: #E5BCE8;
+}
+
+.search{
+    width: 5vw;
+    margin-left: 13rem;
+    border-radius: 40rem;
+    background-color: #1b1c1e;
+}
+
+.search img{
+    margin-top: .8rem;
+    margin-left: .9rem;
+}
+
+.explore{
+    width: 10vw;
+    margin-left: 12rem;
+    margin-top: .6rem;
+    display: none
+}
+
+#pre{
+    border: 2px solid #FFF;
+    border-radius: 4rem;
+    width: 10vw;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: 550;
+}
+
+.bell{
+    width: 4vw;
+    margin-left: 1rem;
+    margin-top: .6rem;
+    display: none;
+}
+
+.bell img {
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+
+.round{
+    width: 4vw;
+    margin-top: .6rem;
+    display: none;
+}
+
+
+/* Main Contents*/
 
 main{
     min-width: 10vw;
     min-height: 10vh;
     display: flex;
+    justify-content: space-between;
 }
 
 .library{
-    width: 23vw;
-    height: 120vh;
+    width: 35vw;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     background-color: #1b1c1e;
@@ -49,12 +145,12 @@ main{
 }
 
 .lib1{
-    width: 13vw;
+    width: 15vw;
     height: 5vh;
 }
 
 .lib2{
-    width: 5vw;
+    width: 7vw;
     height: 5vh;
 }
 
@@ -62,6 +158,7 @@ main{
     font-size: .9rem;
     margin-top: -.1rem;
     color: #9a9b9b;
+    margin-left: 1rem;
 }
 
 .folder{
@@ -77,8 +174,8 @@ main{
 }
 
 .playlist{
-    width: 22vw;
-    height: 24vh;
+    width: 35vw;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -88,56 +185,63 @@ main{
 }
 
 .playlist h2{
-    font-size: .8rem;
+    font-size: .9rem;
     margin-left: 1rem;
     margin-top: 1rem;
 }
 
 .playlist p{
-    font-size: .7rem;
+    font-size: .8rem;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
 .playlist button{
     margin-top: 1rem;
-    padding: .2rem;
-    width: 8rem;
+    padding: .5rem;
+    width: 10rem;
     margin-left: 1rem;
-    font-size: .68rem;
+    font-size: .8rem;
     border-radius: 1rem;
     border: none;
     font-weight: 500;
 }
 
+/* Main Contents */
+
 .contents{
-    width: 75vw;
+    width: 63vw;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .enjoy{
-    width: 75vw;
-    height: 55vh;
+    width: 63vw;
+    height: 65vh;
     background: linear-gradient(to right, #C33764, #1d2671);
     display: flex;
     flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .enjoy h2{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
-.enjoy p{
+.enjoy, .price{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: -1rem;
+    font-size: .9rem;
 }
 
 .but{
     margin: auto;
-    width: 22vw;
+    width: 40vw;
     margin-top: 1rem;
 }
 
@@ -163,21 +267,23 @@ main{
 }
 
 .terms{
-    font-size: .7rem;
-    margin-bottom:2rem;
+    font-size: .75rem;
+    margin-top: -5rem;
+    text-align: center;
 }
 
 .plans{
-    width: 75vw;
-    height: 40vh;
+    width: 63vw;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .plans h2{
     margin-top: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .plans p{
@@ -187,6 +293,7 @@ main{
 
 .select{
     word-spacing: 5rem;
+    margin-top: 2rem;
 }
 
 /* Toggle Switch Container */
@@ -237,26 +344,27 @@ main{
 
 .toggle-container{
     position: absolute;
-    top: 78%;
-    right: 37%;
+    top: 132%;
+    right: 28%;
 }
 
 /* Plan Section */
 
 .plan-types{
-    width: 75vw;
-    height: 30vh;
+    width: 58vw;
+    height: 130vh;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 1rem;
 }
 
 .p-items{
-    width: 15vw;
-    height: 28vh;
+    width: 24vw;
+    height: 40vh;
     border-radius: 1rem;
     background-color: #3a3b3d;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .p-items img{
@@ -340,20 +448,46 @@ main{
 }
 
 .n-items{
-    width: 15vw;
+    width: 20vw;
     margin-top: .5rem;
     margin-left: .5rem;
+
 }
 
 .n-items p{
-    font-size: .6rem;
+    font-size: .7rem;
+}
+
+.n1{
+    position: absolute;
+    top: 197%;
+    right: 40%; 
+}
+
+.n2{
+    position: absolute;
+    top: 197%;
+    right: 6%;
+}
+
+.n3{
+    position: absolute;
+    top: 262%;
+    right: 40%;
+}
+
+.n4{
+    position: absolute;
+    top: 262%;
+    right: 6%;
 }
 
 /* Table */
 
 .table{
-    width: 75vw;
+    width: 63vw;
     height: 100vh;
+    margin-top: -4rem;
 }
 
 table{
@@ -370,7 +504,11 @@ tr{
 
 th, td {
     padding: 1rem;
-    font-size: .8rem;
+    font-size: .65rem;
 }
 
- */
+.compare{
+    display: none;
+}
+
+

@@ -151,7 +151,7 @@ main{
 }
 
 .lib p{
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: -.1rem;
     color: #9a9b9b;
 }
@@ -180,13 +180,13 @@ main{
 }
 
 .playlist h2{
-    font-size: .8rem;
+    font-size: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
 }
 
 .playlist p{
-    font-size: .7rem;
+    font-size: .8rem;
     margin-top: 1rem;
     margin-left: 1rem;
 }
@@ -196,7 +196,7 @@ main{
     padding: .2rem;
     width: 8rem;
     margin-left: 1rem;
-    font-size: .68rem;
+    font-size: .8rem;
     border-radius: 1rem;
     border: none;
     font-weight: 500;
@@ -257,7 +257,7 @@ main{
 }
 
 .terms{
-    font-size: .7rem;
+    font-size: .9rem;
     margin-bottom:2rem;
 }
 
@@ -331,7 +331,7 @@ main{
 
 .toggle-container{
     position: absolute;
-    top: 95%;
+    top: 96.5%;
     right: 37%;
 }
 
@@ -440,7 +440,7 @@ main{
 }
 
 .n-items p{
-    font-size: .6rem;
+    font-size: .8rem;
 }
 
 /* Table */
@@ -464,7 +464,10 @@ tr{
 
 th, td {
     padding: 1rem;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
+.compare{
+    display: none;
+}
 
