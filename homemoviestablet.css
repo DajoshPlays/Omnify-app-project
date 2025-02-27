@@ -1,4 +1,4 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,14 +16,109 @@ body{
     min-height: 100vh;
     background-color: #0F1012;
     color: #FFFFFF;
+    
 }
 
 hmtl{
-    font-size: 62.5%;
+    font-size: 55.5%;
 }
 
 /* Header */
 
+header{
+    width: 100vw;
+    min-height: 5vh;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo{
+    width: 15vw;
+    margin-left: 1rem;
+}
+
+.om{
+    margin-top: .5rem;
+}
+
+.nav{
+    width: 45vw;
+    margin-left: 2rem;
+    border-radius: 3rem;
+    background-color: #1b1c1e;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+    margin-top: .9rem;
+    margin-left: 2rem;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: .8rem; 
+}
+
+.moo{
+    color: #9a9b9b;
+}
+
+.pod{
+    margin-top: -1.4rem;
+    margin-left: 1.2rem;
+}
+
+.move{
+    color: #E5BCE8;
+}
+
+.search{
+    width: 5vw;
+    margin-left: 13rem;
+    border-radius: 40rem;
+    background-color: #1b1c1e;
+}
+
+.search img{
+    margin-top: .8rem;
+    margin-left: .9rem;
+}
+
+.navexplore{
+    width: 10vw;
+    margin-left: 12rem;
+    margin-top: .6rem;
+    display: none
+}
+
+#pre{
+    border: 2px solid #FFF;
+    border-radius: 4rem;
+    width: 10vw;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: 550;
+}
+
+.bell{
+    width: 4vw;
+    margin-left: 1rem;
+    margin-top: .6rem;
+    display: none;
+}
+
+.bell img {
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+
+.round{
+    width: 4vw;
+    margin-top: .6rem;
+    display: none;
+}
 
 /* Main */
 
@@ -31,11 +126,12 @@ main{
     min-width: 10vw;
     min-height: 10vh;
     display: flex;
+    justify-content: space-between;
 }
 
 .library{
-    width: 23vw;
-    height: 120vh;
+    width: 35vw;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     background-color: #1b1c1e;
@@ -49,12 +145,12 @@ main{
 }
 
 .lib1{
-    width: 13vw;
+    width: 15vw;
     height: 5vh;
 }
 
 .lib2{
-    width: 5vw;
+    width: 7vw;
     height: 5vh;
 }
 
@@ -62,6 +158,7 @@ main{
     font-size: .9rem;
     margin-top: -.1rem;
     color: #9a9b9b;
+    margin-left: 1rem;
 }
 
 .folder{
@@ -77,8 +174,8 @@ main{
 }
 
 .playlist{
-    width: 22vw;
-    height: 24vh;
+    width: 35vw;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -101,24 +198,27 @@ main{
 
 .playlist button{
     margin-top: 1rem;
-    padding: .2rem;
-    width: 8rem;
+    padding: .5rem;
+    width: 10rem;
     margin-left: 1rem;
-    font-size: .68rem;
+    font-size: .7rem;
     border-radius: 1rem;
     border: none;
     font-weight: 500;
 }
 
+/* Movie Section */
+ 
 .contents{
-    width: 75vw;
-    height: 100vh;
+    width: 63vw;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10rem;
 }
 
 .crawl{
-    width: 75vw;
+    width: 63vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -127,18 +227,23 @@ main{
     background-position: center;
     background-size: 100% 100%;
     background-attachment:scroll;
+    
 }
 
 .crawl h2{
     font-size: 1rem;
-    margin-top: 16rem;
+    margin-top: 10.5rem;
     margin-left: 3rem;
 }
 
 .crawl p{
     font-size: .8rem;
     margin-left: 1.6rem;
-    margin-top: .8rem;
+    margin-top: .9rem;
+}
+
+.btn{
+    margin-top: -0.1rem;
 }
 
 .Top10{
@@ -151,7 +256,7 @@ main{
     margin-left: -1.5rem;
     color: #FFF;
     border: none;
-    margin-top: -1rem;
+    margin-top: 0.1rem;
 }
 
 #play{
@@ -178,7 +283,7 @@ main{
 }
 
 .genres{
-    width: 75vw;
+    width: 63vw;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
@@ -187,7 +292,7 @@ main{
 }
 
 .explore{
-    width: 75vw;
+    width: 63vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -217,7 +322,7 @@ main{
 }
 
 .ss{
-    width: 10vw;
+    width: 18vw;
     height: 10vh;
     margin-left: 1rem;    
     display: flex;
@@ -240,8 +345,12 @@ main{
     align-items: center;
 }
 
+#hide{
+    display: none;
+}
+
 .genreslist{
-    width: 75vw;
+    width: 63vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -259,21 +368,21 @@ main{
 }
 
 .onlyonomnify{
-    width: 75vw;
+    width: 63vw;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-bottom: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
 .movieslist{
-    width: 75vw;
+    width: 63vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: left;
 }
 
@@ -289,7 +398,7 @@ main{
 }
 
 .ms{
-    width: 16vw;
+    width: 20vw;
     height: 25vh;  
     display: flex;
     flex-direction: column;
@@ -298,13 +407,12 @@ main{
 }
 
 .mov{
-    width: 210px;
+    width: 160px;
     height: 200px;
 }
 
 .movs{
-    width: 210px;
+    width: 160px;
     height: 130px;
 }
 
- */
