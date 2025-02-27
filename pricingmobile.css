@@ -1,0 +1,376 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color : #0F1012;
+    --primary-color: #FFFFFF;
+    --secondary-color: #E5BCE8;
+    --input-color: #48494A;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    min-height: 100vh;
+    background-color: #0F1012;
+    color: #FFFFFF;
+}
+
+hmtl{
+    font-size: 62.5%;
+}
+
+/* Header */
+
+
+/* Main */
+
+main{
+    min-width: 10vw;
+    min-height: 10vh;
+    display: flex;
+}
+
+.library{
+    width: 23vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1c1e;
+}
+
+.lib{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.lib1{
+    width: 13vw;
+    height: 5vh;
+}
+
+.lib2{
+    width: 5vw;
+    height: 5vh;
+}
+
+.lib p{
+    font-size: .9rem;
+    margin-top: -.1rem;
+    color: #9a9b9b;
+}
+
+.folder{
+    width: 16px;
+}
+
+.fa-arrow-right{
+    margin-left: 1rem;
+}
+
+.fa-solid{
+    color: #9a9b9b;
+}
+
+.playlist{
+    width: 22vw;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: .3rem;
+    border-radius: 1rem;
+    background-color: #292A2C;
+}
+
+.playlist h2{
+    font-size: .8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.playlist p{
+    font-size: .7rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.playlist button{
+    margin-top: 1rem;
+    padding: .2rem;
+    width: 8rem;
+    margin-left: 1rem;
+    font-size: .68rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 500;
+}
+
+.contents{
+    width: 75vw;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoy{
+    width: 75vw;
+    height: 55vh;
+    background: linear-gradient(to right, #C33764, #1d2671);
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoy h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.enjoy p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.but{
+    margin: auto;
+    width: 22vw;
+    margin-top: 1rem;
+}
+
+#started{
+    padding: .8rem;
+    border: none;
+    border-radius: 2rem;
+    width: 7rem;
+    margin-left: 1rem;
+    font-size: .75rem;
+}
+
+#view{
+    padding: .8rem;
+    border: none;
+    border-radius: 2rem;
+    width: 7rem;
+    margin-left: 1rem;
+    background: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    font-size: .75rem;
+}
+
+.terms{
+    font-size: .7rem;
+    margin-bottom:2rem;
+}
+
+.plans{
+    width: 75vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plans h2{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.plans p{
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+
+.select{
+    word-spacing: 5rem;
+}
+
+/* Toggle Switch Container */
+ .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Hide the default checkbox */
+.toggle-input {
+    display: none;
+}
+
+/* Toggle switch style */
+.toggle-label {
+    width: 50px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* The moving circle (slider) */
+.toggle-label::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+}
+
+/* When the toggle is checked */
+.toggle-input:checked + .toggle-label {
+    background: #292A2C;
+}
+
+.toggle-input:checked + .toggle-label::after {
+    left: 27px;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 78%;
+    right: 37%;
+}
+
+/* Plan Section */
+
+.plan-types{
+    width: 75vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-items{
+    width: 15vw;
+    height: 28vh;
+    border-radius: 1rem;
+    background-color: #3a3b3d;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-items img{
+    margin-top: .9rem;
+    margin-left: .5rem;
+    width: 17px;
+}
+
+.p-items p{
+    font-size: .7rem;
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+.p-items h2{
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+}
+
+.p-items .naira{
+    font-size: 1rem;
+}
+
+.p-items .mon{
+    font-size: .7rem;
+}
+
+.b1{
+    margin-top: 1rem;
+    width: 10rem;
+    margin-left: .7rem;
+    border-radius: 1rem;
+    border: none;
+    padding: .4rem;
+    font-size: .7rem;
+    background-color: #ffd2d7;
+}
+
+.b2{
+    margin-top: 1rem;
+    width: 10rem;
+    margin-left: .7rem;
+    border-radius: 1rem;
+    border: none;
+    padding: .4rem;
+    font-size: .7rem;
+    background-color: #c4b1d4;
+}
+
+.b3{
+    margin-top: 1rem;
+    width: 10rem;
+    margin-left: .7rem;
+    border-radius: 1rem;
+    border: none;
+    padding: .4rem;
+    font-size: .7rem;
+    background-color: #ffc826;
+}
+
+.b4{
+    margin-top: 1rem;
+    width: 10rem;
+    margin-left: .7rem;
+    border-radius: 1rem;
+    border: none;
+    padding: .4rem;
+    font-size: .7rem;
+    background-color: #a5bbd1;
+}
+
+.exp{
+    margin-top: rem;
+}
+
+.plannotes{
+    width: 75vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-items{
+    width: 15vw;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.n-items p{
+    font-size: .6rem;
+}
+
+/* Table */
+
+.table{
+    width: 75vw;
+    height: 100vh;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+tr{
+    border-bottom: 1px solid #3a3b3d;
+}
+
+th, td {
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+ */
