@@ -24,6 +24,98 @@ hmtl{
 
 /* Header */
 
+header{
+    width: 100vw;
+    min-height: 5vh;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.logo{
+    width: 23vw;
+}
+
+.om{
+    margin-top: .5rem;
+}
+
+.nav{
+    width: 25vw;
+    margin-left: 7rem;
+    border-radius: 3rem;
+    background-color: #1b1c1e;
+}
+
+.nav li{
+    float: left;
+    list-style-type: none;
+    margin-top: .9rem;
+    margin-left: 2rem;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: .8rem; 
+}
+
+.moo{
+    color: #9a9b9b;
+}
+
+.pod{
+    margin-top: -1.4rem;
+    margin-left: 1.2rem;
+}
+
+.move{
+    color: #E5BCE8;
+}
+
+.search{
+    width: 5vw;
+    margin-left: 1rem;
+    border-radius: 40rem;
+    background-color: #1b1c1e;
+}
+
+.search img{
+    margin-top: .8rem;
+    margin-left: 1.3rem;
+}
+
+.explore{
+    width: 10vw;
+    margin-left: 12rem;
+    margin-top: .6rem;
+}
+
+#pre{
+    border: 2px solid #FFF;
+    border-radius: 4rem;
+    width: 10vw;
+    padding: .5rem;
+    font-size: .7rem;
+    font-weight: 550;
+}
+
+.bell{
+    width: 4vw;
+    margin-left: 1rem;
+    margin-top: .6rem;
+}
+
+.bell img {
+    margin-left: .5rem;
+    margin-top: .3rem;
+}
+
+.round{
+    width: 4vw;
+    margin-top: .6rem;
+}
+
 
 /* Main */
 
@@ -123,6 +215,8 @@ main{
     background: linear-gradient(to right, #C33764, #1d2671);
     display: flex;
     flex-direction: column;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .enjoy h2{
@@ -237,7 +331,7 @@ main{
 
 .toggle-container{
     position: absolute;
-    top: 78%;
+    top: 95%;
     right: 37%;
 }
 
