@@ -65,100 +65,69 @@ body{
     width: 4.5rem;
     height: 4rem;
 }
-.explore{
+
+
+/* main styling */
+/* Base (Mobile) Playlist Styling */
+main {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 0.875rem;
-}
-.heading{
-    color: #FAFAFA;
-    font-size: 1rem;
-    font-weight: 800;
-}
-.explore a{
-    color: #A9A9AA;
-    text-decoration: none;
-    font-size: 0.875rem;
-}
-.top{
-    display: flex;
-    gap: 1.4rem;
-    padding: 1rem 0.875rem;
-    overflow-x: hidden;
-}
-.image-text{
-    flex: 0 0 50%;
-    max-width: 150px;
-    overflow: hidden;
-}
-.image-text-2{
-    flex: 0 0 25%;
-    max-width: 180px;
-    overflow: hidden;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    gap: 1rem;
+    padding: 0.75rem 0.2rem 0.75rem 0.1rem;
 }
 
-.image-text img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-.image-text-2 img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 150px;
-    display: block;
-}
-.image-text p{
-    margin-top: 10px;
-    color: #A9A9AA;
-    font-weight: 500;
-    font-size: 0.75rem;
-}
-.library-playlist{
+.playlist {
     background-color: #1B1C1E;
-    display: none;
+    width: 100%; /* Full width on mobile */
+    display: none; /* Hidden by default on mobile */
 }
-.your-library{
+
+.your-library {
     display: flex;
-    padding: 1rem 0.875rem;
     justify-content: space-between;
     padding: 20px;
 }
-.library-heading{
+
+.library-heading {
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 0.5rem;
 }
-.library-icons{
+
+.library-icons {
     display: flex;
-    gap: 15px;
+    gap: 0.875rem;
 }
-.container-card{
+
+.container-card {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     padding: 20px;
 }
-.card{
+
+.card {
     background-color: #292A2C;
     border-radius: 10px;
     padding: 1.1875rem 1.25rem;
 }
-.card-title{
+
+.card-title {
     color: #FAFAFA;
     font-weight: 700;
     font-size: 1rem;
 }
-.card-p{
+
+.card-p {
     color: #FAFAFA;
     font-weight: 400;
     font-size: 0.875rem;
     margin-top: 0.85rem;
 }
-.card-btn{
-    background-color: #FFFFFF;
-    color: #0F1012;
+
+.card-btn {
+    background-color: var(--primary-color);
+    color: var(--main-color);
     font-weight: 600;
     font-size: 0.75rem;
     padding: 0.875rem 1.25rem;
@@ -167,9 +136,88 @@ body{
     cursor: pointer;
     margin-top: 0.625rem;
 }
-.col{
+
+/* Base (Mobile) Genre Container Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: #717171;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.genres-cont {
+    width: 100%; /* Full width on mobile */
+    overflow-x: scroll;
     background-color: #1B1C1E;
+}
+
+.explore {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.875rem;
+}
+
+.explore a {
+    color: #A9A9AA;
+    text-decoration: none;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.music-btn {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    border: none;
+    gap: 0.875rem;
+    background-color: #292A2C;
+    padding: 12px 18px 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.top2 {
+    display: flex;
+    gap: 12px;
+    padding: 1rem 0.875rem;
+}
+
+.top {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.image-text {
+    flex: 0 0 50%; /* Two per row on mobile */
+    padding: 0 0 0 1.5rem;
+}
+
+.image-text img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    display: block;
+}
+
+.image-text p {
+    margin-top: 10px;
+    color: #A9A9AA;
+    font-weight: 500;
+    font-size: 0.75rem;
 }
 
 
@@ -182,24 +230,20 @@ body{
     .header-2{
         display: none;
     }
-    .container{
-        display: flex;
-        padding-left: 10px;
-        gap: 10px;
+    main {
+        flex-direction: row; /* Side-by-side layout for desktop */
     }
-    .library-playlist{
-        display: block;
-        flex: 1 1 35%;
-        border-radius: 10px;
-        height: 150vh;
+    .playlist {
+        display: block; /* Show playlist on larger screens */
+        width: 50vw; /* Half width for tablet */
     }
-    .image-text{
-        flex: 0 0 50%;
-        max-width: 180px;
-        overflow: hidden;
+
+    .genres-cont {
+        width: calc(100vw - 50vw); /* Remaining width */
     }
-    .col{
-        flex: 1 1 65%;
+
+    .image-text {
+        flex: 0 0 50%; /* Maintain two per row for tablet */
     }
     .bars{
         display: none;
@@ -239,31 +283,20 @@ body{
         justify-content: space-between;
         align-items: center;
     }
-    .container{
-        display: flex;
-        overflow-x: hidden;
-        gap: 10px;
+    main {
+        flex-direction: row; /* Side-by-side layout for desktop */
     }
-    .library-playlist{
-        display: block;
+
+    .playlist {
+        width: 30vw; /* Narrower playlist for desktop */
     }
-    .library-playlist{
-        flex: 1 1 35%;
-        border-radius: 10px;
+
+    .genres-cont {
+        width: calc(100vw - 30vw); /* Adjust width accordingly */
     }
-    .image-text{
-        flex: 0 0 auto;
-        max-width: 150px;
-        overflow: hidden;
-    }
-    .explore{
-        padding-left: 28px;
-    }
-    .top{
-        padding-left: 28px;
-    }
-    .col{
-        flex: 1 1 65%;
+
+    .image-text {
+        flex: 0 0 19%; /* More items per row on desktop */
     }
     .header-2{
         display: none;
@@ -286,7 +319,6 @@ body{
         display: flex;
         gap: 1.5rem;
         align-items: center;
-        /* justify-content: center; */
     }
     .m-features img{
         max-width: 30%;
