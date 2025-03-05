@@ -213,6 +213,23 @@ main {
   cursor: pointer;
   margin-top: 0.625rem;
 }
+.mobile-nav{
+  display: none;
+}
+.hr-1{
+  margin-top: 1rem;
+  border: 1px solid #6F7071;
+  height: 2px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+hr{
+  border: 1px solid #6F7071;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
 
 /* Base (Mobile) Genre Container Styling */
 ::-webkit-scrollbar {

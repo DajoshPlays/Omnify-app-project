@@ -29,8 +29,17 @@ body{
     color: #7D7E7F;
     font-size: 0.75rem;
 }
+.navlinks:hover{
+    color: #E5BCE8;
+}
+.navlinks:active{
+    color: #E5BCE8;
+}
 .links{
     display: none;
+}
+.bars{
+    cursor: pointer;
 }
 .links-2{
     display: flex;
@@ -56,15 +65,53 @@ body{
 }
 .search{
     background-color: #1B1C1E;
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 24px;
+    padding: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-basis: 15%; */
-    width: 4.5rem;
-    height: 4rem;
 }
+.pre-btn {
+    background-color: #ffffff;
+    color: #0f1012;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 150px;
+    padding: 0.875rem 1.25rem;
+    border: none;
+  }
+  .mobile-nav{
+    position: fixed;
+    top: 0px;
+    right: 0;
+    min-height: 100vh;
+    width: 50%;
+    z-index: 999;
+    background-color: #48494A;
+    padding: 1rem;
+  }
+  /* .mobile-nav.active{
+    display: flex
+  } */
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .hr-1{
+    margin-top: 1rem;
+    border: 1px solid #6F7071;
+    height: 2px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  hr{
+    border: 1px solid #6F7071;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
 
 
 /* main styling */
@@ -275,6 +322,9 @@ main {
         width: 3.5rem;
         height: 3rem;
     }
+    .mobile-nav{
+        display: none;
+    }
 
 }
 @media(min-width:1200px){
@@ -304,7 +354,7 @@ main {
     .mynav-links{
         background-color: #1B1C1E;
         display: flex;
-        gap: 10px;
+        gap: 2rem;
         width: 100%;
         padding: 0.9375rem 2.6875rem;
         border-radius: 150px;
@@ -344,5 +394,12 @@ main {
         border: none;
         font-size: 0.75rem;
         font-weight: 600;
+        cursor: pointer;
+    }
+    .actions {
+        display: none;
+      }
+    .mobile-nav{
+        display: none;
     }
 }
