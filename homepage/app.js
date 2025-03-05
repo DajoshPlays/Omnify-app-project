@@ -3,10 +3,19 @@
 // variables definition
 
 const menuButton = document.querySelector(".bars");
+const mobileNav = document.querySelector(".mobile-nav")
 
 
 menuButton.addEventListener('click', function(){
-    menuButton.classList.add('active')
+    mobileNav.classList.toggle('active')
+    console.log();
 })
 
-console.log(menuButton);
+document.addEventListener('click', function(event) {
+    isClickInsideMenu = mobileNav.contains(event.target);
+    isClickOnMenuButton = menuButton.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnMenuButton && mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+    }
+})
