@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 55.5%;
+}
+
+:root {
+    --main-color : #0F1012;
+    --primary-color: #FFFFFF;
+    --secondary-color: #E5BCE8;
+    --input-color: #48494A;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    min-height: 100vh;
+    background-color: #0F1012;
+    color: #FFFFFF;
+}
+
+main{
+    min-width: 25vw;
+    min-height: 24vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.arrow{
+    width: 380px;
+}
+
+.progress{
+    display: flex;
+    align-items: center;
+    width: 55vw;
+    height: 6vh;
+    margin-top: 1rem;
+}
+
+.progress .bold {
+    margin-left: .5rem;
+    font-size: 1.8rem;
+    color:#8f9295;
+}
+
+.light{
+    margin-top: .3rem;
+    font-size: 1.4rem;
+    color:#8f9295;
+}
+
+.arrow{
+    margin-left: .5rem;
+}
+
+.head{
+    width: 25vw;
+    height: 6vh;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.head h2{
+    font-size: 2rem;
+}
+
+.conditions{
+    width: 40vw;
+    height: 13vh;
+    margin-top: 1rem;
+    background-color: #222324;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+#cond{
+    margin-right: .5rem;
+}
+
+.condtext{
+    width: 39vw;
+    height: 20vh;
+    margin-top: 1rem;
+}
+
+.condtext p{
+    font-size: 1.3rem;
+}
+
+.termslink{
+    color:#E5BCE8;
+    font-weight: 700;
+}
+
+.signup{
+    width: 36rem;
+    height: 3rem;
+    margin: 2rem 0;
+}
+
+#sign{
+    padding: 1.2rem;
+    width: 36rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #E5BCE8;
+}
