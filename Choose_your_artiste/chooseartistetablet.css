@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 50%;
+    font-size: 55.5%;
 }
 
 :root {
@@ -56,17 +56,17 @@ body{
 
 .light{
     margin-top: .3rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color:#8f9295;
 }
 
 .arrow{
     margin-right: 2rem;
-    width: 250px;
+    width: 400px;
 }
 
 .preference{
-    width: 70vw;
+    width: 40vw;
     height: 7vh;
     display: flex;
     justify-content:center;
@@ -81,8 +81,8 @@ body{
 }
 
 .options{
-    margin-top: .2rem;
-    width: 80vw;
+    margin-top: 1rem;
+    width: 25vw;
     height: 10vh;
     padding: .5rem;
     border-radius: 1rem;
@@ -90,34 +90,29 @@ body{
 }
 
 .options li{
-    float: center;
+    float: left;
     list-style-type: none;
     margin-top: .2rem;
-    margin-right: .1rem;
-    align-items: center;
-    
+    margin-right: .3rem;
 }
 
 .options a{
     text-decoration: none;
     color: #FFF;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    padding-left: 2.5rem;
 }
 
 .choose{
-    width: 70vw;
+    width: 30vw;
     height: 8vh;
     margin-top: 6rem;
     margin-left: 6rem;
     text-align: center;
-
-
 }
 
 .choose p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
 }
 
@@ -138,26 +133,23 @@ body{
 }
 
 .option1, .option2, .option3, .option4, h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: .2rem;
     text-align: center;
 }
 
 .option1,.option2, .option3, .option4,  p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: .2rem;
     text-align: center;
 }
 
 .direction{
-    width: 70vw;
+    width: 30vw;
     height: 10vh;
     margin: auto;
     margin-bottom: .2rem;
-    display: flex;
-    align-items: center;
-    border: 2px solid #FFF;
 }
 
 .direction li{
@@ -175,7 +167,7 @@ body{
     margin-left: .5rem;
     border-radius: 1rem;
     margin-top: .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #next{
@@ -187,7 +179,7 @@ body{
     background-color: #E5BCE8;
     border: none;
     margin-top: .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #pre:hover{
@@ -195,7 +187,7 @@ body{
 }
 
 .skip{
-    width: 65vw;
+    width: 30vw;
     height: 5vh;
     margin: auto;
     margin-bottom: 1rem;
@@ -205,7 +197,7 @@ body{
 
 .skip a{
     color:#E5BCE8;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 

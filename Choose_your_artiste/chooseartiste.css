@@ -49,13 +49,13 @@ body{
 
 .progress .bold {
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color:#8f9295;
 }
 
 .light{
     margin-top: .3rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color:#8f9295;
 }
 
@@ -95,7 +95,7 @@ body{
 .options a{
     text-decoration: none;
     color: #FFF;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 100;
 }
 
@@ -105,10 +105,11 @@ body{
     margin-top: 1rem;
     margin-left: 18rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .choose p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .container{
@@ -127,14 +128,14 @@ body{
 }
 
 .option1, .option2, .option3, .option4, h3{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: .2rem;
     text-align: center;
 }
 
 .option1,.option2, .option3, .option4,  p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: .2rem;
     text-align: center;
 }
@@ -161,7 +162,7 @@ body{
     margin-left: .5rem;
     border-radius: 1rem;
     margin-top: .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #next{
@@ -173,7 +174,7 @@ body{
     background-color: #E5BCE8;
     border: none;
     margin-top: .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #pre:hover{
@@ -192,7 +193,7 @@ body{
 
 .skip a{
     color:#E5BCE8;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
