@@ -47,13 +47,13 @@ main{
 
 .progress .bold {
     margin-left: .5rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color:#8f9295;
 }
 
 .light{
     margin-top: .3rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color:#8f9295;
 }
 
@@ -79,7 +79,7 @@ main{
     background-color: #222324;
     border-radius: 1rem;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 #cond{
@@ -93,7 +93,7 @@ main{
 }
 
 .condtext p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .termslink{
