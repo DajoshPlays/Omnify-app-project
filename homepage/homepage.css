@@ -63,12 +63,10 @@ body {
   display: none;
 }
 .search {
-  background-color: #1b1c1e;
-  border-radius: 24px;
-  padding: 14px;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .pre-btn {
   background-color: #ffffff;
@@ -188,6 +186,7 @@ main {
 /* Base (Mobile) Genre Container Styling */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -217,7 +216,29 @@ main {
   justify-content: space-between;
   padding: 1rem 0.875rem;
 }
-
+#search-input{
+  position: absolute;
+  left: 100%;
+  transform: translate(-100%);
+  opacity: 0;
+  margin-right: 10px;
+  padding: 1rem 0.875rem;
+  width: 270px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+#search-input.active{
+  left: 0;
+  opacity: 1;
+  margin-left: -20px;
+}
+.s-icon{
+  background-color: #1b1c1e;
+  padding: 0.875rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
 .explore a {
   color: #a9a9aa;
   text-decoration: none;
@@ -312,17 +333,16 @@ main {
     padding: 1rem 0.875rem;
     border-radius: 150px;
   }
-  .search {
+  /* .search {
     background-color: #1b1c1e;
     border-radius: 50%;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-basis: 15%; */
     width: 3.5rem;
     height: 3rem;
-  }
+  } */
   .mobile-nav {
     display: none;
   }
@@ -374,16 +394,6 @@ main {
     max-width: 30%;
     height: auto;
     display: block;
-  }
-  .search {
-    background-color: #1b1c1e;
-    border-radius: 24px;
-    padding: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 2.8rem;
   }
   .f-btn {
     color: #0f1012;

@@ -4,6 +4,8 @@
 
 const menuButton = document.querySelector(".bars");
 const mobileNav = document.querySelector(".mobile-nav")
+const searchInput = document.querySelector('#search-input')
+const  searchButton = document.querySelector('.search')
 
 
 menuButton.addEventListener('click', function(){
@@ -18,4 +20,10 @@ document.addEventListener('click', function(event) {
     if (!isClickInsideMenu && !isClickOnMenuButton && mobileNav.classList.contains('active')) {
         mobileNav.classList.remove('active');
     }
+})
+
+
+// search input functionality
+searchButton.addEventListener('click', function(){
+    searchInput.classList.toggle('active')
 })
