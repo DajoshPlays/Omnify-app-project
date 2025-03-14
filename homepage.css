@@ -126,19 +126,23 @@ hr {
   visibility: visible;
 }
 
+.f-btn a {
+  text-decoration: none;
+  color: #0F1012;
+}
 /* main styling */
 /* Base (Mobile) Playlist Styling */
 main {
   display: flex;
-  flex-direction: column; /* Stack elements vertically on mobile */
+  flex-direction: column;
   gap: 1rem;
   padding: 0.75rem 0.2rem 0.75rem 0.1rem;
 }
 
 .playlist {
   background-color: #1b1c1e;
-  width: 100%; /* Full width on mobile */
-  display: none; /* Hidden by default on mobile */
+  width: 100%;
+  display: none; 
 }
 
 .your-library {
@@ -220,7 +224,7 @@ main {
 }
 
 .genres-cont {
-  width: 100%; /* Full width on mobile */
+  width: 100%; 
   background-color: #1b1c1e;
 }
 
@@ -229,22 +233,27 @@ main {
   justify-content: space-between;
   padding: 1rem 0.875rem;
 }
-#search-input{
+#search-input {
   position: absolute;
-  left: 100%;
-  transform: translate(-100%);
+  left: 57%;
+  transform: translateX(-100%);
   display: none;
   opacity: 0;
   margin-right: 10px;
   padding: 1rem 0.875rem;
-  width: 270px;
+  width: 290px;
   border: 1px solid #ffffff;
-  border-radius: 10px;
-  transition: tranform 0.3s;
+  border-radius: 24px;
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  background-color: #1b1c1e;
+  color: #ffffff;
+  cursor: pointer;
 }
-#search-input.active{
+
+#search-input.active {
   display: block;
-  transform: translateX(-100%);
+  transform: translateX(-110%); 
+  opacity: 1;
 }
 .s-icon{
   background-color: #1b1c1e;
@@ -287,7 +296,7 @@ main {
 }
 
 .image-text {
-  flex: 0 0 50%; /* Two per row on mobile */
+  flex: 0 0 50%; 
   padding: 0 0 0 1.5rem;
   position: relative;
 }
@@ -316,19 +325,19 @@ main {
     display: none;
   }
   main {
-    flex-direction: row; /* Side-by-side layout for desktop */
+    flex-direction: row; 
   }
   .playlist {
-    display: block; /* Show playlist on larger screens */
-    width: 50vw; /* Half width for tablet */
+    display: block;
+    width: 50vw; 
   }
 
   .genres-cont {
-    width: calc(100vw - 50vw); /* Remaining width */
+    width: calc(100vw - 50vw); 
   }
 
   .image-text {
-    flex: 0 0 50%; /* Maintain two per row for tablet */
+    flex: 0 0 50%;
   }
   .bars {
     display: none;
@@ -370,19 +379,19 @@ main {
     align-items: center;
   }
   main {
-    flex-direction: row; /* Side-by-side layout for desktop */
+    flex-direction: row; 
   }
 
   .playlist {
-    width: 30vw; /* Narrower playlist for desktop */
+    width: 30vw; 
   }
 
   .genres-cont {
-    width: calc(100vw - 30vw); /* Adjust width accordingly */
+    width: calc(100vw - 30vw); 
   }
 
   .image-text {
-    flex: 0 0 19%; /* More items per row on desktop */
+    flex: 0 0 19%; 
   }
   .header-2 {
     display: none;

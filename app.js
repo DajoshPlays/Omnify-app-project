@@ -55,6 +55,12 @@ imageHovers.forEach((imageHover) => {
 
 
 // search input functionality
-searchButton.addEventListener('click', function(){
-    searchInput.classList.toggle('active')
-})
+searchButton.addEventListener('click', function () {
+    if (searchInput.classList.contains('active')) {
+        searchInput.classList.remove('active');
+        setTimeout(() => (searchInput.style.display = 'none'), 300); // Match CSS transition duration
+    } else {
+        searchInput.style.display = 'block';
+        requestAnimationFrame(() => searchInput.classList.add('active'));
+    }
+});
