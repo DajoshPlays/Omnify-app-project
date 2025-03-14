@@ -112,6 +112,19 @@ hr {
   border-left: none;
   border-right: none;
 }
+.absolute{
+  background-color: #E5BCE8;
+  padding: 0.5rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  visibility: hidden;
+  transition: all 0.1s ease-in-out;
+}
+.absolute.active2{
+  visibility: visible;
+}
 
 /* main styling */
 /* Base (Mobile) Playlist Styling */
@@ -227,19 +240,19 @@ main {
   width: 270px;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  transition: left 0.3s ease, opacity 0.3s ease;
+  transition: tranform 0.3s;
 }
 #search-input.active{
-  left: 0;
-  opacity: 1;
   display: block;
-  margin-left: -20px;
+  transform: translateX(-100%);
 }
 .s-icon{
   background-color: #1b1c1e;
   padding: 0.875rem;
   border-radius: 1.5rem;
   cursor: pointer;
+  padding: 0.875rem;
+  border-radius: 1.5rem;
 }
 .explore a {
   color: #a9a9aa;
@@ -276,6 +289,7 @@ main {
 .image-text {
   flex: 0 0 50%; /* Two per row on mobile */
   padding: 0 0 0 1.5rem;
+  position: relative;
 }
 
 .image-text img {
