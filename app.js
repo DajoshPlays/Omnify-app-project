@@ -45,10 +45,12 @@ imageHovers.forEach((imageHover) => {
 
     imageHover.addEventListener('mouseover', function() {
         absoluteImage.classList.add('active2'); 
+        imageHover.classList.add('active3');
     });
 
     imageHover.addEventListener('mouseout', function() {
-        absoluteImage.classList.remove('active2'); 
+        absoluteImage.classList.remove('active2');
+        imageHover.classList.remove('active3');
     });
 });
 
