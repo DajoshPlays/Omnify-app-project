@@ -320,6 +320,9 @@ main {
   font-weight: 500;
   font-size: 0.75rem;
 }
+.afro{
+  color: var(--primary-color);
+}
 
 @media (min-width: 700px) {
   .header-container {
